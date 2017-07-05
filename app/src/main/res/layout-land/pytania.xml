@@ -1,216 +1,242 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fff000"
-    tools:context=".Pytania" >
+    android:fillViewport="true"
+    android:scrollbars="none" >
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Zgadnij,co to?"
-        android:textSize="10dp"
-        android:textStyle="italic"
-        android:textColor="#ff0000"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
-
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/bruder"
-        android:layout_below="@+id/textView2"
-        android:layout_centerHorizontal="true" />
-
-    <RadioGroup
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/radioGroup"
-        android:layout_below="@+id/imageView5"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="9dp"
-        android:layout_marginStart="9dp">
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Szpic miniaturowy"
-            android:onClick="wys"
-            android:textSize="8dp"
-            android:textStyle="italic"
-            android:id="@+id/radioButton1" />
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Teerier airedale"
-            android:textSize="8dp"
-            android:textStyle="italic"
-            android:id="@+id/radioButton2" />
-    </RadioGroup>
-
-    <RadioGroup
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/radioGroup2"
-        android:layout_below="@+id/imageView5"
-        android:layout_centerHorizontal="true">
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Golden retriever"
-            android:textSize="8dp"
-            android:onClick="wys"
-            android:textStyle="italic"
-            android:id="@+id/radioButton3" />
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Alaskan malamute"
-            android:textSize="8dp"
-            android:textStyle="italic"
-            android:id="@+id/radioButton4" />
-    </RadioGroup>
-
-    <RadioGroup
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/radioGroup3"
-        android:layout_below="@+id/imageView7"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true">
-
-        <RadioButton
-            android:id="@+id/radioButton5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Akita Inu"
-            android:onClick="wys"
-            android:textSize="8dp"
-            android:textStyle="italic" />
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Alaskan malamute"
-            android:textSize="8dp"
-            android:textStyle="italic"
-            android:id="@+id/radioButton6" />
-    </RadioGroup>
-    <RadioGroup
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/radioGroup4"
-        android:layout_below="@+id/imageView9"
-        android:layout_alignLeft="@+id/imageView9"
-        android:layout_alignStart="@+id/imageView9">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
 
-        <RadioButton
-            android:id="@+id/radioButton7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Jeż"
-            android:onClick="wys"
-            android:textSize="8dp"
-            android:textStyle="italic" />
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Kolczatka"
-            android:textSize="8dp"
-            android:textStyle="italic"
-            android:id="@+id/radioButton8" />
-    </RadioGroup>
-
-    <RadioGroup
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/radioGroup5"
-        android:layout_alignTop="@+id/radioGroup4"
-        android:layout_alignLeft="@+id/radioGroup3"
-        android:layout_alignStart="@+id/radioGroup3">
-
-
-        <RadioButton
-            android:id="@+id/radioButton9"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Cocker spaniel"
-            android:onClick="wys"
-            android:textSize="8dp"
-            android:textStyle="italic" />
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Cocker astabilis"
-            android:textSize="8dp"
-            android:textStyle="italic"
-            android:id="@+id/radioButton10" />
-    </RadioGroup>
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="#fff000"
+            tools:context=".Pytania" >
 
 
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/linearLayout2"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Zgadnij,co to?"
+                    android:textColor="#ff0000"
+                    android:textSize="40dp"
+                    android:textStyle="italic" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView2"
+                    android:layout_gravity="center"
+                    android:src="@drawable/bruder" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/imageView5"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center">
+
+                    <RadioButton
+                        android:id="@+id/radioButton3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="wys"
+                        android:text="Golden retriever"
+                        android:textSize="8dp"
+                        android:textStyle="italic" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Alaskan malamute"
+                        android:textSize="8dp"
+                        android:textStyle="italic" />
+                </RadioGroup>
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/imageView5"
+                    android:layout_gravity="center"
+                    android:src="@drawable/akita" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioGroup3"
+                    android:layout_below="@+id/imageView7"
+                    android:layout_gravity="center"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true">
+
+                    <RadioButton
+                        android:id="@+id/radioButton5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Akita Inu"
+                        android:onClick="wys"
+                        android:textSize="8dp"
+                        android:textStyle="italic" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Alaskan malamute"
+                        android:textSize="8dp"
+                        android:textStyle="italic"
+                        android:id="@+id/radioButton6" />
+                </RadioGroup>
 
 
 
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/szpic"
-        android:layout_above="@+id/radioGroup"
-        android:layout_alignRight="@+id/imageView9"
-        android:layout_alignEnd="@+id/imageView9" />
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/szpic"
+                    android:layout_gravity="center"
+                    android:layout_above="@+id/radioGroup"
+                    android:layout_alignRight="@+id/imageView9"
+                    android:layout_alignEnd="@+id/imageView9" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioGroup"
+                    android:layout_gravity="center"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    >
+
+                    <RadioButton
+                        android:id="@+id/radioButton1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="wys"
+                        android:text="Szpic miniaturowy"
+                        android:textSize="8dp"
+                        android:textStyle="italic" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Teerier airedale"
+                        android:textSize="8dp"
+                        android:textStyle="italic"
+                        android:id="@+id/radioButton2" />
+                </RadioGroup>
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignTop="@+id/imageView8"
+                    android:layout_gravity="center"
+                    android:src="@drawable/jez" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioGroup4"
+                    android:layout_below="@+id/imageView9"
+                    android:layout_alignLeft="@+id/imageView9"
+                    android:layout_gravity="center"
+                    android:layout_alignStart="@+id/imageView9">
 
 
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/akita"
-        android:layout_marginRight="15dp"
-        android:layout_marginEnd="15dp"
-        android:layout_alignTop="@+id/imageView5"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+                    <RadioButton
+                        android:id="@+id/radioButton7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jeż"
+                        android:onClick="wys"
+                        android:textSize="8dp"
+                        android:textStyle="italic" />
 
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/cocker"
-        android:layout_below="@+id/radioGroup3"
-        android:layout_alignLeft="@+id/radioGroup3"
-        android:layout_alignStart="@+id/radioGroup3" />
-
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/jez"
-        android:layout_marginLeft="14dp"
-        android:layout_marginStart="14dp"
-        android:layout_below="@+id/radioGroup"
-        android:layout_alignLeft="@+id/radioGroup"
-        android:layout_alignStart="@+id/radioGroup" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Wynik"
-        android:onClick="wys"
-        android:layout_above="@+id/radioGroup5"
-        android:layout_alignRight="@+id/radioGroup2"
-        android:layout_alignEnd="@+id/radioGroup2" />
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kolczatka egipska"
+                        android:textSize="8dp"
+                        android:textStyle="italic"
+                        android:id="@+id/radioButton8" />
+                </RadioGroup>
 
 
-</RelativeLayout>
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/cocker"
+                    android:layout_gravity="center"/>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioGroup5"
+                    android:layout_alignTop="@+id/radioGroup4"
+                    android:layout_alignLeft="@+id/radioGroup3"
+                    android:layout_alignStart="@+id/radioGroup3"
+                    android:layout_gravity="center">
+
+
+                    <RadioButton
+                        android:id="@+id/radioButton9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cocker spaniel"
+                        android:onClick="wys"
+                        android:textSize="8dp"
+                        android:textStyle="italic" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cocker astabilis"
+                        android:textSize="8dp"
+                        android:textStyle="italic"
+                        android:id="@+id/radioButton10" />
+
+                </RadioGroup>
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/imageView9"
+                    android:layout_alignEnd="@+id/radioGroup2"
+                    android:layout_alignRight="@+id/radioGroup2"
+                    android:layout_gravity="center"
+                    android:onClick="wys"
+                    android:text="Wynik" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
 
